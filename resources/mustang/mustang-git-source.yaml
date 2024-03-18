@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/plakyda-codefresh/mustang.git
+    repoURL: https://github.com/plakyda-codefresh/mustang-git-source.git
     path: .
     targetRevision: HEAD
     directory:
