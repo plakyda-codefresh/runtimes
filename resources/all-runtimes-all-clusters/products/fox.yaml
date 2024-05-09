@@ -3,9 +3,10 @@ kind: Product
 metadata:
   name: fox
 spec:
-  promotionFlows:
+  gitTriggerSelectors:
     - name: prom-flow-tes
       triggerConditions:
-        - property: commitMessage
+        - key: commitMessage
           operator: In
-          value: sdvsdvs
+          values:
+            - sdvsdvs
