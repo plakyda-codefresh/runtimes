@@ -8,7 +8,9 @@ spec:
       gitTriggerSelectors:
         - key: commitMessage
           operator: NotIn
-          values: sdvsdv
+          values: 
+            - sdvsdv
         - key: commitMessage
           operator: In
-          values: dvdvdv
+          values: 
+            - dvdvdv
