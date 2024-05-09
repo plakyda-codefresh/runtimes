@@ -7,10 +7,10 @@ spec:
     - name: prom-flow-tes
       gitTriggerSelectors:
         - key: commitMessage
-          operator: NotIn
-          values: 
-            - sdvsdv
-        - key: commitMessage
           operator: In
-          values: 
-            - dvdvdv
+          values:
+            - '[production]'
+        - key: branch
+          operator: In
+          values:
+            - production
