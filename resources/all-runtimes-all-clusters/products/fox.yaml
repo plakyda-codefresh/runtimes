@@ -9,14 +9,14 @@ spec:
         - key: commitMessage
           operator: In
           values:
-            - '[production]'
-        - key: branch
-          operator: In
-          values:
-            - production
+            - sdvsdv
     - name: prom-flow-tes
       gitTriggerSelectors:
         - key: commitMessage
           operator: In
           values:
-            - sdvsdv
+            - '[production]'
+        - key: branch
+          operator: In
+          values:
+            - production
