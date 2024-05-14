@@ -14,3 +14,9 @@ spec:
           operator: In
           values:
             - production
+    - name: prom-flow-tes
+      gitTriggerSelectors:
+        - key: commitMessage
+          operator: In
+          values:
+            - sdvsdv
