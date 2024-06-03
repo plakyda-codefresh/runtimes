@@ -20,11 +20,4 @@ spec:
           operator: In
           values:
             - production
-  promotionTemplate:
-    versionSource:
-      file: sdvdsvsd
-      jsonPath: sdvsdvsd
-    promotion:
-      ascascas:
-        jsonPaths:
-          - scascasc
+  promotionTemplateRef: promotion-config
