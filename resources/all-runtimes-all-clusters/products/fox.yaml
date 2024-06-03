@@ -20,4 +20,20 @@ spec:
           operator: In
           values:
             - production
-  promotionTemplateRef: promotion-config
+  promotionTemplate:
+    versionSource:
+      file: vvsdvsdv
+      jsonPath: sdvsdvsdv
+    promotion:
+      sdvdsvsdvsd:
+        jsonPaths:
+          - sdvsdvsdvdsv
+      sdvsdvdsv:
+        jsonPaths:
+          - ssdvdsvdsv
+          - sdvsdvsdv
+      sdvsdvsdv:
+        jsonPaths:
+          - sdvsdvdsv
+          - dsvds
+          - vsdv
