@@ -18,5 +18,6 @@ gitops-runtime:
           - hermes-victor.rnd-sandbox.cf-infra.com
         protocol: https
       name: fox
+      isConfigurationRuntime: true
   installer:
     skipValidation: true
