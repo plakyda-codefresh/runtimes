@@ -20,4 +20,11 @@ spec:
           operator: In
           values:
             - production
-  promotionTemplateRef: promotion-config
+  promotionTemplate:
+    versionSource:
+      file: values.yaml
+      jsonPath: $.image.tag
+    promotion:
+      values.yaml:
+        jsonPaths:
+          - $.image.tag
