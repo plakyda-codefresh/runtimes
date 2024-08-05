@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/skywalker/**/*.yaml,runtimes/skywalker/*.yaml,skywalker/cf-gitops-runtime.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/skywalker/**/*.yaml,runtimes/skywalker/*.yaml,skywalker/cf-gitops-runtime.yaml,skywalker/skywalker.yaml}
       recurse: true
     path: resources
     repoURL: https://github.com/plakyda-codefresh/runtimes.git
