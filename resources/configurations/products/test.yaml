@@ -14,7 +14,4 @@ spec:
     versionSource:
       file: values.yaml
       jsonPath: $.image.tag
-    promotion:
-      values.yaml:
-        jsonPaths:
-          - $.image.tag
+      
