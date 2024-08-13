@@ -5,8 +5,10 @@ metadata:
   annotations:
     description: prom-desc
 spec:
-  triggerEnvironment: Test
+  triggerEnvironment: test1
   steps:
-    - environment: test1
+    - environment: test2
       dependsOn:
-        - Test
+        - test1
+      policy:
+        action: commit
