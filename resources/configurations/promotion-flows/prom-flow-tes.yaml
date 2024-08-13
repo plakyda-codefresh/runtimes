@@ -1,0 +1,12 @@
+apiVersion: codefresh.io/v1beta1
+kind: PromotionFlow
+metadata:
+  name: prom-flow-tes
+  annotations:
+    description: prom-desc
+spec:
+  triggerEnvironment: Test
+  steps:
+    - environment: test1
+      dependsOn:
+        - Test
