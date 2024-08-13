@@ -1,26 +1,18 @@
 gitops-runtime:
   argo-cd:
-    # configs:
-    #   cm:
-    #     codefresh.reporterVersion: v2
     eventReporter:
-      enabled: "true"
+      enabled: 'true'
       version: v2
       env:
         - name: USE_GRPC
-          value: "true"
+          value: 'true'
     repoServer:
       replicas: 1
     controller:
       replicas: 1
     server:
       replicas: 1
-        # image:
-        # repository: docker.io/xeonalex/personal-argocd-dev
-      # tag: 2.8.1-parrallel-events-23
       service:
-        # annotations:
-        #   kubernetes.io/ingress.class: nginx-public
         type: LoadBalancer
   app-proxy:
     config:
@@ -41,5 +33,6 @@ gitops-runtime:
           - skywalker.rnd-sandbox.cf-infra.com
         protocol: https
       name: skywalker
+      isConfigurationRuntime: true
   installer:
     skipValidation: true
