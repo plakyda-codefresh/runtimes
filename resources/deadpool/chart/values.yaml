@@ -1,4 +1,19 @@
 gitops-runtime:
+  argo-cd:
+    eventReporter:
+      enabled: 'true'
+      version: v2
+      env:
+        - name: USE_GRPC
+          value: 'true'
+    repoServer:
+      replicas: 1
+    controller:
+      replicas: 1
+    server:
+      replicas: 1
+      service:
+        type: LoadBalancer
   app-proxy:
     config:
       cors: http://local.codefresh.io
