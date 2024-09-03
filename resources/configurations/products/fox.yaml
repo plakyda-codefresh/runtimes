@@ -21,10 +21,10 @@ spec:
           values:
             - production
   promotionTemplate:
-    versionSource:
-      file: values.yaml
-      jsonPath: $.image.tag
-    # promotion:
-    #   values.yaml:
-    #     jsonPaths:
-    #       - $.image.tag
+    # versionSource:
+    #   file: values.yaml
+    #   jsonPath: $.image.tag
+    promotion:
+      values.yaml:
+        jsonPaths:
+          - $.image.tag
