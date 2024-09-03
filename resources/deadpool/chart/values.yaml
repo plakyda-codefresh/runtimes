@@ -33,5 +33,6 @@ gitops-runtime:
           - deadpool.rnd-sandbox.cf-infra.com
         protocol: https
       name: deadpool
+      isConfigurationRuntime: true
   installer:
     skipValidation: true
