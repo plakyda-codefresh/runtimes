@@ -5,7 +5,7 @@ name: codefresh-gitops-runtime
 version: 0.10.1
 dependencies:
   - name: gitops-runtime
-    repository: oci://quay.io/codefresh
-    version: 0.10.1
-    # repository: oci://quay.io/codefresh/dev
-    # version: 0.0.0-feat-operator-update-c840181
+    # repository: oci://quay.io/codefresh
+    # version: 0.10.1
+    repository: oci://quay.io/codefresh/dev
+    version: 0.0.0-feat-operator-update-c840181
