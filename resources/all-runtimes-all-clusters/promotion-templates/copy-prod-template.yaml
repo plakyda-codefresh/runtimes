@@ -1,0 +1,24 @@
+apiVersion: codefresh.io/v1beta1
+kind: PromotionTemplate
+metadata:
+  name: copy-prod-template
+spec:
+  applicationSourceSelector:
+    matchLabels:
+      codefresh.io/product: copy-prod-template
+  priority: 10
+  versionSource:
+    file: requirements.yaml
+    jsonPath: "$.dependencies[0].version"
+  promotion:
+    Chart.yaml:
+      jsonPaths:
+      - $.appVersion
+      - $.version
+      - $.dependencies
+    values.yaml:
+      jsonPaths:
+      - $..image
+    requirements.yaml:
+      jsonPaths:
+      - "$.dependencies"
