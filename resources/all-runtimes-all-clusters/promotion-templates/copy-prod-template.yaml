@@ -10,15 +10,15 @@ spec:
   versionSource:
     file: requirements.yaml
     jsonPath: "$.dependencies[0].version"
-  promotion:
-    Chart.yaml:
-      jsonPaths:
-      - $.appVersion
-      - $.version
-      - $.dependencies
-    values.yaml:
-      jsonPaths:
-      - $..image
-    requirements.yaml:
-      jsonPaths:
-      - "$.dependencies"
+  # promotion:
+  #   Chart.yaml:
+  #     jsonPaths:
+  #     - $.appVersion
+  #     - $.version
+  #     - $.dependencies
+  #   values.yaml:
+  #     jsonPaths:
+  #     - $..image
+  #   requirements.yaml:
+  #     jsonPaths:
+  #     - "$.dependencies"
