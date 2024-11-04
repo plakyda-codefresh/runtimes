@@ -5,5 +5,9 @@ metadata:
 spec:
   promotionTemplate:
     versionSource:
-      file: values.yaml
+      file: Chart.yaml
       jsonPath: $.image.tag
+    promotion:
+      values-production.yaml:
+        jsonPaths:
+          - $.service.type
