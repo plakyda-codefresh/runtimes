@@ -1,5 +1,7 @@
 gitops-runtime:
   argo-cd:
+    acrController:
+      enabled: true
     eventReporter:
       enabled: 'true'
       version: v2
