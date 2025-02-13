@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,rex/cf-gitops-runtime.yaml,runtimes/rex/**/*.yaml,runtimes/rex/*.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,rex/cf-gitops-runtime.yaml,rex/epepepe.yaml,runtimes/rex/**/*.yaml,runtimes/rex/*.yaml}
       recurse: true
     path: resources
     repoURL: https://github.com/plakyda-codefresh/runtimes.git
