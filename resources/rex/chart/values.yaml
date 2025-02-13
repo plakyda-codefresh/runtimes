@@ -2,6 +2,11 @@ gitops-runtime:
   app-proxy:
     config:
       cors: http://local.codefresh.io
+    image:
+      tag: 1.3281.0
+    initContainer:
+      image:
+        tag: 1.3281.0
   global:
     codefresh:
       accountId: 65f80465351a7afd2247a100
