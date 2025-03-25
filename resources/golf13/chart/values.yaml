@@ -1,0 +1,27 @@
+gitops-runtime:
+  app-proxy:
+    config:
+      cors: http://local.codefresh.io
+    image:
+      tag: 1.3328.0
+    initContainer:
+      image:
+        tag: 1.3328.0
+  global:
+    codefresh:
+      accountId: 65f80465351a7afd2247a100
+      url: https://plakyda-platform.ngrok.io
+      userToken:
+        secretKeyRef:
+          name: codefresh-user-token
+          key: token
+    runtime:
+      ingress:
+        className: nginx-internal
+        enabled: true
+        hosts:
+          - growth-team.rnd-sandbox.cf-infra.com
+        protocol: https
+      name: golf13
+  installer:
+    skipValidation: true
