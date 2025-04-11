@@ -23,5 +23,6 @@ gitops-runtime:
           - growth-team.rnd-sandbox.cf-infra.com
         protocol: https
       name: golf20
+      isConfigurationRuntime: true
   installer:
     skipValidation: true
