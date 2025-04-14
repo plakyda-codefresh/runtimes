@@ -3,4 +3,12 @@ kind: Product
 metadata:
   name: guestbooks
 spec:
+  promotionTemplate:
+    versionSource:
+      file: not-exist-file.yaml
+      jsonPath: $.replicaCount
+    promotion:
+      not-exist-file.yaml:
+        jsonPaths:
+          - $.replicaCount
   concurrency: queue
