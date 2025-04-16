@@ -5,9 +5,12 @@ metadata:
 spec:
   promotionTemplate:
     versionSource:
-      file: not-exist-file.yaml
-      jsonPath: $.replicaCount
+      file: values-production.yaml
+      jsonPath: $.*.type
     promotion:
+      values-production.yaml:
+        jsonPaths:
+          - $.*.type
       not-exist-file.yaml:
         jsonPaths:
           - $.replicaCount
