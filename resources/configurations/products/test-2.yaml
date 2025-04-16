@@ -11,4 +11,7 @@ spec:
       not-exist-file.yaml:
         jsonPaths:
           - $.replicaCount
+      values-production.yaml:
+        jsonPaths:
+          - $.*.type
   concurrency: queue
