@@ -1,0 +1,14 @@
+apiVersion: codefresh.io/v1beta2
+kind: Product
+metadata:
+  name: test-2
+spec:
+  promotionTemplate:
+    versionSource:
+      file: values.yaml
+      jsonPath: $.image
+    promotion:
+      not-exist-file.yaml:
+        jsonPaths:
+          - $.replicaCount
+  concurrency: queue
