@@ -6,7 +6,7 @@ spec:
   promotionTemplate:
     versionSource:
       file: values-production.yaml
-      jsonPath: $.*.type
+      jsonPath: $.service.type
     promotion:
       values-production.yaml:
         jsonPaths:
