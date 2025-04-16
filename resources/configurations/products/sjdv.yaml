@@ -4,7 +4,11 @@ metadata:
   name: sjdv
 spec:
   promotionTemplate:
+    versionSource:
+      file: not-exist-file.yaml
+      jsonPath: $.replicaCount
     promotion:
       not-exist-file.yaml:
-        jsonPaths: []
+        jsonPaths:
+          - $.replicaCount
   concurrency: queue
