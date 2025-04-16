@@ -1,0 +1,10 @@
+apiVersion: codefresh.io/v1beta2
+kind: Product
+metadata:
+  name: sjdv
+spec:
+  promotionTemplate:
+    promotion:
+      not-exist-file.yaml:
+        jsonPaths: []
+  concurrency: queue
