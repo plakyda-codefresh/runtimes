@@ -1,4 +1,24 @@
 gitops-runtime:
+  app-proxy:
+    config:
+      cors: http://local.codefresh.io
+    env:
+      HELM_REPOSITORY: oci://quay.io/codefresh/dev/gitops-runtime
   global:
+    codefresh:
+      accountId: 67fd91f7fc62c16e6a387bf5
+      url: https://plakyda-platform.ngrok.io
+      userToken:
+        secretKeyRef:
+          name: codefresh-user-token
+          key: token
     runtime:
-      isConfigurationRuntime: true
+      ingress:
+        className: nginx-internal
+        enabled: true
+        hosts:
+          - growth-team.rnd-sandbox.cf-infra.com
+        protocol: https
+      name: golf24
+  installer:
+    skipValidation: true
