@@ -1,4 +1,0 @@
-gitops-runtime:
-  global:
-    runtime:
-      isConfigurationRuntime: true
