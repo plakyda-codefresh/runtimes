@@ -2,6 +2,9 @@ gitops-runtime:
   app-proxy:
     config:
       cors: http://local.codefresh.io
+    image:
+      repository: quay.io/codefresh/dev/cap-app-proxy
+      tag: 1.3498.0-cr-28410-error-state-da52daa
   global:
     codefresh:
       accountId: 67fd91f7fc62c16e6a387bf5
