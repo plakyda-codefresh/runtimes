@@ -6,3 +6,14 @@ metadata:
     description: svsdv1sc
 spec:
   triggerEnvironment: test
+  steps:
+    - environment: prod
+      dependsOn:
+        - test
+      policy:
+        action: commit
+    - environment: test23
+      dependsOn:
+        - prod
+      policy:
+        action: commit
