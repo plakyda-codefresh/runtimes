@@ -3,6 +3,6 @@ kind: PromotionFlow
 metadata:
   name: sdvsdvsdvsdv
   annotations:
-    description: svsdv
+    description: svsdv1sc
 spec:
   triggerEnvironment: test
