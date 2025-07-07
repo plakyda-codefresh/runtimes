@@ -21,6 +21,7 @@ gitops-runtime:
           name: codefresh-user-token
           key: token
     runtime:
+      ingressUrl: http://local.codefresh.io:8080
       ingress:
         enabled: false
       name: golf34
