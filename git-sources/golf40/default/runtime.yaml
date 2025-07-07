@@ -14,7 +14,7 @@ spec:
     helm:
       releaseName: cf-gitops-runtime
   destination:
-    namespace: golf40
+    namespace: gitops-runtime
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
