@@ -4,7 +4,7 @@ metadata:
   name: myruntime
   labels:
     codefresh.io/entity: runtime
-    codefresh.io/internal: 'true'
+    # codefresh.io/internal: 'true'
 spec:
   project: default
   source:
