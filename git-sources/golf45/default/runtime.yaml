@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myruntime
+  labels:
+    codefresh.io/entity: runtime
+    codefresh.io/internal: 'true'
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/plakyda-codefresh/runtimes.git
+    targetRevision: HEAD
+    path: resources/golf45/chart
+    helm:
+      releaseName: golf45-release
+  destination:
+    namespace: gitops-runtime
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      prune: true
+      selfHeal: false
