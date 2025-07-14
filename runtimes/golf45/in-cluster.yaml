@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,resources/golf45/default-git-source.yaml,golf45/test.yaml,runtimes/golf45/**/*.yaml,runtimes/golf45/*.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,golf45/default-git-source.yaml,golf45/test.yaml,runtimes/golf45/**/*.yaml,runtimes/golf45/*.yaml}
       recurse: true
     path: resources
     repoURL: https://github.com/plakyda-codefresh/runtimes.git
