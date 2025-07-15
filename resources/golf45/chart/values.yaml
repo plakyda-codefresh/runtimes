@@ -1,38 +1,25 @@
-
 gitops-runtime:
   app-proxy:
-    replicaCount: 1
     config:
       cors: http://local.codefresh.io
-    env:
-      HELM_REPOSITORY: oci://quay.io/codefresh/dev/gitops-runtime
-  argo-workflows:
-    controller:
-      workflowDefaults:
-        spec:
-          archiveLogs: true
-          artifactRepositoryRef:
-            configMap: codefresh-workflows-log-store
-            key: codefresh-workflows-log-store
   global:
     codefresh:
       accountId: 67fd91f7fc62c16e6a387bf5
-      url: https://plakyda-platform.ngrok.io
+      url: http://host.docker.internal
       userToken:
         secretKeyRef:
           name: codefresh-user-token
           key: token
     runtime:
-      ingressUrl: http://local.codefresh.io:8080
       ingress:
         enabled: false
+      ingressUrl: http://local.codefresh.io:8080
       name: golf45
-      isConfigurationRuntime: true
   installer:
-    skipValidation: true
-  tunnel-client:
-    enabled: false # important!
+    skipValidation: false
   internal-router:
     service:
-      type: NodePort # important!
       nodePort: 31243
+      type: NodePort
+  tunnel-client:
+    enabled: false
