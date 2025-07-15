@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: myruntime-2
-  labels:
-    codefresh.io/entity: runtime
-    codefresh.io/internal: 'true'
+  # labels:
+  #   codefresh.io/entity: runtime
+  #   codefresh.io/internal: 'true'
 spec:
   project: default
   source:
