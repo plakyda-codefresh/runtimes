@@ -13,7 +13,8 @@ gitops-runtime:
     runtime:
       ingress:
         enabled: false
-      ingressUrl: http://local.codefresh.io:8080
+      # ingressUrl: http://local.codefresh.io:8080
+      ingressUrl: https://plakyda-ingresshost.ngrok.io
       name: golf56
       isConfigurationRuntime: true
   installer:
