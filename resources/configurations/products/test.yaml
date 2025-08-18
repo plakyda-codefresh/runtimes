@@ -1,6 +1,6 @@
 apiVersion: codefresh.io/v1beta2
 kind: Product
 metadata:
-  name: test-renamed
+  name: test-renamed-2
 spec:
   concurrency: queue
