@@ -1,14 +1,14 @@
-apiVersion: codefresh.io/v1beta2
-kind: Product
-metadata:
-  name: guestbooks21
-spec:
-  promotionTemplate:
-    versionSource:
-      file: not-exist-file.yaml
-      jsonPath: $.replicaCount
-    promotion:
-      not-exist-file.yaml:
-        jsonPaths:
-          - $.replicaCount
-  concurrency: queue
+# apiVersion: codefresh.io/v1beta2
+# kind: Product
+# metadata:
+#   name: guestbooks21
+# spec:
+#   promotionTemplate:
+#     versionSource:
+#       file: not-exist-file.yaml
+#       jsonPath: $.replicaCount
+#     promotion:
+#       not-exist-file.yaml:
+#         jsonPaths:
+#           - $.replicaCount
+#   concurrency: queue
