@@ -1,6 +1,6 @@
 apiVersion: codefresh.io/v1beta2
 kind: Product
 metadata:
-  name: dbproduct
+  name: dbproduct-2
 spec:
   concurrency: queue
