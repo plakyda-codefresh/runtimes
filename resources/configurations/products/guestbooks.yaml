@@ -1,7 +1,7 @@
 apiVersion: codefresh.io/v1beta2
 kind: Product
 metadata:
-  name: guestbooks
+  name: guestbooks21
 spec:
   promotionTemplate:
     versionSource:
