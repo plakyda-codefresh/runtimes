@@ -1,6 +1,6 @@
 apiVersion: codefresh.io/v1beta2
 kind: Product
 metadata:
-  name: orphaned-product-changed
+  name: orphaned-product-changed-twice
 spec:
   concurrency: queue
