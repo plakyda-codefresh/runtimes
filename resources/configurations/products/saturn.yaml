@@ -1,6 +1,6 @@
 apiVersion: codefresh.io/v1beta2
 kind: Product
 metadata:
-  name: saturn-updated
+  name: saturn
 spec:
   concurrency: queue
