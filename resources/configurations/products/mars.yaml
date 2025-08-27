@@ -3,4 +3,11 @@ kind: Product
 metadata:
   name: jupiter-new
 spec:
+  promotionFlows:
+    - name: prom-flow-tes
+      gitTriggerSelectors:
+        - key: commitMessage
+          operator: In
+          values:
+            - fbd
   concurrency: queue
