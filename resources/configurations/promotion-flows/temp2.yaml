@@ -1,0 +1,15 @@
+apiVersion: codefresh.io/v1beta1
+kind: PromotionFlow
+metadata:
+  name: temp2
+  annotations:
+    description: sdvsdvsdv
+    version: "1"
+spec:
+  triggerEnvironment: test
+  steps:
+    - environment: prod
+      dependsOn:
+        - test
+      policy:
+        action: commit
