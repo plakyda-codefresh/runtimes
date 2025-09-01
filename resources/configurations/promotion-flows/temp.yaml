@@ -1,0 +1,8 @@
+apiVersion: codefresh.io/v1beta1
+kind: PromotionFlow
+metadata:
+  name: temp
+  annotations:
+    description: ""
+spec:
+  triggerEnvironment: ""
