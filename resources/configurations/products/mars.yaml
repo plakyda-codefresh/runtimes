@@ -10,22 +10,4 @@ spec:
           operator: In
           values:
             - fbd
-    - name: temp2
-      gitTriggerSelectors:
-        - key: commitMessage
-          operator: In
-          values:
-            - temp2
-    - name: temp3
-      gitTriggerSelectors:
-        - key: commitMessage
-          operator: In
-          values:
-            - sdvsv
-    - name: temp4
-      gitTriggerSelectors:
-        - key: commitMessage
-          operator: In
-          values:
-            - sdvsv
   concurrency: queue
