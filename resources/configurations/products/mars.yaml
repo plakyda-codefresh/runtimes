@@ -16,4 +16,10 @@ spec:
           operator: In
           values:
             - temp2
+    - name: temp3
+      gitTriggerSelectors:
+        - key: commitMessage
+          operator: In
+          values:
+            - sdvsv
   concurrency: queue
