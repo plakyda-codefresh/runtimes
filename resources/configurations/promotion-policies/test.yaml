@@ -8,5 +8,7 @@ spec:
     product:
       names:
         - super
+        - jupiter-new
   policy:
     action: commit
+    preAction: prom-workflow
