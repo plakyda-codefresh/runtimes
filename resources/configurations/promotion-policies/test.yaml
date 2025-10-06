@@ -9,6 +9,9 @@ spec:
       names:
         - super
         - jupiter-new
+    targetEnvironment:
+      names:
+        - prod
   policy:
     action: commit
     preAction: prom-workflow
