@@ -1,0 +1,17 @@
+apiVersion: codefresh.io/v1beta2
+kind: Product
+metadata:
+  name: jupiter-new
+spec:
+  promotionFlows:
+    - name: prom-flow-tes
+      gitTriggerSelectors:
+        - key: commitMessage
+          operator: In
+          values:
+            - ererg
+        - key: commitMessage
+          operator: In
+          values:
+            - ergeg
+  concurrency: queue
