@@ -16,6 +16,6 @@ spec:
             - ergeg
   promotionTemplate:
     versionSource:
-      file: guestbook-rollout.yaml
-      jsonPath: $.*.replicas
+      file: values.yaml
+      jsonPath: $.replicaCount
   concurrency: queue
