@@ -6,3 +6,14 @@ metadata:
     description: ""
 spec:
   triggerEnvironment: rollout
+  steps:
+    - environment: prod
+      dependsOn:
+        - rollout
+      policy:
+        action: commit
+    - environment: guestbook
+      dependsOn:
+        - rollout
+      policy:
+        action: commit
