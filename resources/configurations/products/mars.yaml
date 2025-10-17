@@ -16,4 +16,8 @@ spec:
           operator: In
           values:
             - fbd
+  promotionTemplate:
+    versionSource:
+      file: guestbook-rollout.yaml
+      jsonPath: $.*.replicas
   concurrency: queue
