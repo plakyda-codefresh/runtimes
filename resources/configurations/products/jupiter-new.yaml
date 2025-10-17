@@ -14,4 +14,8 @@ spec:
           operator: In
           values:
             - ergeg
+  promotionTemplate:
+    versionSource:
+      file: values.yaml
+      jsonPath: $.*.tag
   concurrency: queue
