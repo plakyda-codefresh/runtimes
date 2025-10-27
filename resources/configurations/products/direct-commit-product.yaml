@@ -1,6 +1,0 @@
-apiVersion: codefresh.io/v1beta2
-kind: Product
-metadata:
-  name: direct-commit-product
-spec:
-  concurrency: queue
