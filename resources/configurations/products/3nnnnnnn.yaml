@@ -1,6 +1,0 @@
-apiVersion: codefresh.io/v1beta2
-kind: Product
-metadata:
-  name: 3nnnnnnn
-spec:
-  concurrency: queue
